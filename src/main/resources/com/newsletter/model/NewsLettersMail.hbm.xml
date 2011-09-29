@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 sept. 2011 22:29:06 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.newsletter.model.NewsLettersMail" table="newsLettersMail">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="dateNews" type="timestamp">
+            <column name="dateNews" length="19" />
+        </property>
+        <property name="titre" type="string">
+            <column name="titre" />
+        </property>
+        <property name="laPage" type="string">
+            <column name="laPage" length="16777215" />
+        </property>
+    </class>
+</hibernate-mapping>

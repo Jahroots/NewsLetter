@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 sept. 2011 22:29:06 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.newsletter.model.Hacker" table="hacker">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="pwd" type="string">
+            <column name="pwd" />
+        </property>
+        <property name="ladate" type="string">
+            <column name="ladate" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

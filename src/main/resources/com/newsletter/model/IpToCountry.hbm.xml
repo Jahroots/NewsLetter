@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 sept. 2011 22:29:06 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.newsletter.model.IpToCountry" table="ip_to_country">
+        <composite-id name="id" class="com.newsletter.model.IpToCountryId">
+            <key-property name="ipFrom" type="double">
+                <column name="IP_FROM" precision="22" scale="0" />
+            </key-property>
+            <key-property name="ipTo" type="double">
+                <column name="IP_TO" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="countryCode" type="string">
+            <column name="COUNTRY_CODE" length="2" />
+        </property>
+        <property name="countryCode3" type="string">
+            <column name="COUNTRY_CODE_3" length="3" not-null="true" />
+        </property>
+        <property name="countryName" type="string">
+            <column name="COUNTRY_NAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

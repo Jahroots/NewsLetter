@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 sept. 2011 22:29:06 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.newsletter.model.Users" table="users">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="user" type="string">
+            <column name="user" length="50" />
+        </property>
+        <property name="pwd" type="string">
+            <column name="pwd" length="50" />
+        </property>
+        <property name="admin" type="boolean">
+            <column name="admin" not-null="true" />
+        </property>
+        <property name="email1" type="string">
+            <column name="email1" length="50" />
+        </property>
+        <property name="email2" type="string">
+            <column name="email2" />
+        </property>
+        <property name="email3" type="string">
+            <column name="email3" />
+        </property>
+        <property name="email4" type="string">
+            <column name="email4" />
+        </property>
+        <property name="adresse" type="string">
+            <column name="adresse" />
+        </property>
+        <property name="cp" type="string">
+            <column name="cp" />
+        </property>
+        <property name="ville" type="string">
+            <column name="ville" />
+        </property>
+        <property name="pays" type="string">
+            <column name="pays" />
+        </property>
+        <property name="tel1" type="string">
+            <column name="tel1" />
+        </property>
+        <property name="tel2" type="string">
+            <column name="tel2" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" />
+        </property>
+    </class>
+</hibernate-mapping>
